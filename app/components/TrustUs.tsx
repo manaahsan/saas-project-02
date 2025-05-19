@@ -1,5 +1,4 @@
 import React from "react";
-import { trustUs } from "../constants/helper";
 import acmeLogo from "@/public/assets/images/TrustUsLogo/acme.png";
 import quantumLogo from "@/public/assets/images/TrustUsLogo/quantum.png";
 import echoLogo from "@/public/assets/images/TrustUsLogo/echo.png";

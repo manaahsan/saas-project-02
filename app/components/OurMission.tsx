@@ -4,7 +4,13 @@ import { missions } from "../constants/helper";
 import Leaf from "@/public/assets/images/Mission/leaf.png";
 
 export default function OurMission() {
-  const Card = ({ title, description }: any) => (
+  const Card = ({
+    title,
+    description,
+  }: {
+    title: string;
+    description: string;
+  }) => (
     <div className="border border-white/20 py-6 px-4 rounded-[10px] shadow">
       <div className="bg-white p-4 inline-flex mx-auto rounded-[10px]">
         <div className="">
@@ -35,7 +41,7 @@ export default function OurMission() {
             </p>
           </div>
           <div className="mt-16 grid grid-cols-1 gap-4 md:w-[360px] mx-auto lg:w-auto lg:grid-cols-3">
-            {missions?.map(({ title, description }, index) => (
+            {missions?.map(({ title, description }) => (
               <Card key={title} title={title} description={description} />
             ))}
           </div>
