@@ -11,7 +11,7 @@ export default function FAQ() {
             Frequently asked question
           </div>
           <div className="space-y-4 max-w-[540px] mx-auto">
-            {faq.map(({ id, question, answer }) => (
+            {faq.map(({ id, question }) => (
               <div key={id} className="flex justify-between py-4 border-b">
                 <h5 className="text-white text-lg tracking-tight">{question}</h5>
                 <Plus color="white" className="font-bold" />
